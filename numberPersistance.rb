@@ -7,7 +7,18 @@
 #Write a function to find the additive persistence of a number
 
 def additivePersistence(number)
+	total = 0
+	counter = 1
 	string = number.to_s
-	string.each_char do |chr|
-		chr.to_i += total
+	
+	while string.length > 2
+		string.each_char { |chr| total += chr.to_i }
+		puts total
+		string = total.to_s
+		counter += 1
+	end
+	
+	puts counter
 end
+
+puts additivePersistence(41177722899)

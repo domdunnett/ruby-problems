@@ -7,5 +7,7 @@
 #Write a function to find the additive persistence of a number
 
 def additivePersistence(number)
-  # your magic
+	string = number.to_s
+	string.each_char do |chr|
+		chr.to_i += total
 end

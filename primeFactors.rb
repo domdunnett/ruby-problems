@@ -7,10 +7,10 @@ def primeFactors(num)
 	i = 2
 	primeFactorsArray = []
 	
-	while i < num-1 do
-		if num % 2 == 0
-			primeFactorsArray.push(2)
-			i += 1
+	while i <= num do
+		if num % i == 0
+			primeFactorsArray << i
+			num /= i
 		else
 			i += 1
 		end
@@ -20,4 +20,4 @@ def primeFactors(num)
 	
 end
 
-primeFactors(15)
+primeFactors(36)

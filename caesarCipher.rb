@@ -12,8 +12,12 @@ def encrypt(message)
 end
 
 def decrypt(new_message)
+	decrypted_message = []
 	new_message.each do |num|
-		num/7.chr += decrypted_message
+		decrypted_message.push((num/7).chr)
 	end
 	decrypted_message
 end
+
+puts encrypt("hello")
+puts decrypt(encrypt("hello"))

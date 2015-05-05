@@ -8,8 +8,8 @@ def primeFactors(num)
 	primeFactorsArray = []
 	
 	while i < num-1 do
-		if num % i == 0
-			primeFactorsArray.push(i)
+		if num % 2 == 0
+			primeFactorsArray.push(2)
 			i += 1
 		else
 			i += 1
